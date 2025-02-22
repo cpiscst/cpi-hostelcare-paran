@@ -1,13 +1,14 @@
 
 
 
-import logo from '../src/assets/cpi-logo.jpg'
 import hostelImage from '../src/assets/hostel.jpg'
+import person1 from '../src/assets/person1.jpg'
 function App() {
 
   return (
     <>
-      <div >
+    
+      <div className='max-w-[1200px] my-0 mx-auto' >
         {/* Navbar Section */}
         <nav className='flex justify-between items-center bg-gray-300 h-[60px]'>
           <div>
@@ -55,36 +56,73 @@ function App() {
 
                 </div>
         </div>
-
+                    {/* Service Section */}
         <div>
           <h2 className='text-5xl text-center py-10 font-bold'>Our Service</h2>
 
          <div className='grid grid-cols-3 gap-5 '>
-         <div className=' h-[100px] w-[250px] bg-gray-300  rounded border-2 border-gray-400 flex items-center justify-center'>
+         <div className=' h-[100px] w-full bg-gray-300  rounded border-2 border-gray-400 flex items-center justify-center'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Room</h6>
           </div>
 
-          <div className=' h-[100px] w-[250px]rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Meal</h6>
           </div>
 
-          <div className=' h-[100px] w-[250px]rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Event</h6>
           </div>
 
-          <div className=' h-[100px] w-[250px] rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Security</h6>
           </div>
-          <div className=' h-[100px] w-[250px] rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>WiFi</h6>
           </div>
-          <div className=' h-[100px] w-[250px]rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Clening</h6>
           </div>
-          <div className=' h-[100px] w-[250px]rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Home Tutor</h6>
           </div>
          </div>
+        </div>
+
+        {/* Our Member */}
+        <div className='mt-10'>
+          <h2 className='text-5xl font-bold text-center my-8'>Our Member</h2>
+          <div className='grid grid-cols-3 gap-5'> 
+
+              <div className='h-[350px] border-2 rounded-xl'>
+                <figure className='flex justify-center pt-1'>
+                <img src={person1} alt='Member Image'></img>
+                </figure>
+                <div className='p-6 text-center'>
+                <h6 className='text-3xl font-semibold '>Chomchom Ali</h6>
+                <p>Hostel Super</p>
+              </div>
+              </div>
+              
+              <div className='h-[350px] border-2 rounded-xl'>
+                <figure className='flex justify-center pt-1'>
+                <img src={person1} alt='Member Image'></img>
+                </figure>
+                <div className='p-6 text-center'>
+                <h6 className='text-3xl font-semibold '>Kashem Ali</h6>
+                <p>Hostel Super</p>
+              </div>
+              </div>
+
+              <div className='h-[350px] border-2 rounded-xl'>
+                <figure className='flex justify-center pt-1'>
+                <img src={person1} alt='Member Image'></img>
+                </figure>
+                <div className='p-6 text-center'>
+                <h6 className='text-3xl font-semibold '>Abdul Ali</h6>
+                <p>Hostel Super</p>
+              </div>
+              </div>
+          </div>
         </div>
       </div>
     </>
