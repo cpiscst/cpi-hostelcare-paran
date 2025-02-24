@@ -1,6 +1,6 @@
 
 
-
+import banner from "../src/assets/banner.jpg"
 import hostelImage from '../src/assets/hostel.jpg'
 import person1 from '../src/assets/person1.jpg'
 function App() {
@@ -10,14 +10,14 @@ function App() {
     
       <div className='max-w-[1200px] my-0 mx-auto' >
         {/* Navbar Section */}
-        <nav className='flex justify-between items-center bg-gray-300 h-[60px]'>
+        <nav className='flex justify-between items-center bg-gray-300 h-[60px] px-2'>
           <div>
             {/* <a href={"/"}>
             <img className='h-[50px] w-[50px]' src={logo} alt='Logo'/>
             </a> */}
            <a href='/'>
-           <h2 className='uppercase font-bold text-2xl text-blue-400'>
-           <span className='text-purple-600 pr-1'>CPI</span>Hostel Care</h2>
+           <h2 className='uppercase font-bold text-2xl text-gray-700'>
+           <span className=' pr-1'>CPI</span>Hostel Care</h2>
            </a>
           </div>
 
@@ -36,13 +36,18 @@ function App() {
           </div>
         </nav>
 
+
+
+
         {/* Bannar Section */}
-        <div className=' h-[300px] w-full bg-slate-50 flex justify-between'>
+        <div
+      
+        className= "h-[500px] w-full  flex justify-between sm:bg-[url(../src/assets/banner.jpg)] opacity-70 object-cover bg-no-repeat bg-right  border-2 border-gray-200 p-2">
 
                
                  <div className='h-full flex justify-center items-center'>
                  <div className='text-center'>
-                  <h2 className='text-4xl font-bold uppercase text-gray-600 text-center'>Welcome 
+                 <h2 className='md:text-5xl text-3xl font-bold uppercase text-gray-900 text-center'>Welcome 
                     <span className='block'>to</span> 
                     <span className='block '>
                       <span className='text-purple-400'>Cpi</span> Hostel Care</span>
@@ -51,10 +56,7 @@ function App() {
                   </div>
                   
                  </div>
-                <img className='w-fit  h-full' src={hostelImage} alt='Hostel Image'/>
-                <div>
-
-                </div>
+            
         </div>
                     {/* Service Section */}
         <div>
@@ -87,6 +89,11 @@ function App() {
           </div>
          </div>
         </div>
+
+
+
+
+
 
         {/* Our Member */}
         <div className='mt-10'>
