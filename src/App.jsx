@@ -6,6 +6,10 @@ import security from "../src/assets/security.jpg"
 import wifi from "../src/assets/wifi.jpg"
 import cleaning from "../src/assets/cleaning.jpg"
 import home_tutor from "../src/assets/home_tutor.jpg"
+import facebook from "../src/assets/facebook.png"
+import linked from "../src/assets/linked.png"
+import twiter from "../src/assets/twiter.png"
+import insta from "../src/assets/insta.png"
 
 import banner from "../src/assets/banner.jpg"
 import hostelImage from '../src/assets/hostel.jpg'
@@ -50,7 +54,7 @@ function App() {
         {/* Bannar Section */}
         <div
       
-        className= "h-[500px] w-full  flex justify-between sm:bg-[url(../src/assets/banner.jpg)] opacity-70 object-cover bg-no-repeat bg-right  border-2 border-gray-200 p-2">
+        className= "h-[500px] w-full  flex justify-between sm:bg-[url(../src/assets/banner.jpg)] opacity-70 object-cover bg-no-repeat bg-right   border-gray-200 p-2">
 
                
                  <div className='h-full flex justify-center items-center'>
@@ -147,6 +151,45 @@ function App() {
               </div>
           </div>
         </div>
+        
+          <footer className=" mt-10 p-10 grid grid-cols-3 text-center gap-5 bg-gray-400 text-white">
+            <div className="space-y-8">
+            <h4 className="text-xl uppercase">Useful Link</h4>
+              
+              <div className="space-y-1">
+              <p><a href="/">About</a></p>
+            <p> <a href="/">Services</a></p>
+           <p><a href="/">Contact</a></p>
+            <p><a href="/">Shop</a></p>
+            <p><a href="/">Blog</a></p>
+              </div>
+            
+            </div>
+            <div className="space-y-8">
+            <h4 className="text-xl uppercase">NEWSLETTER</h4>
+              <form>
+              <input type="text" className=" w-[300px] h-[40px] bg-white"/>
+              </form>
+            <button className="px-10 border-2 rounded-xl py-2 font-bold text-md   ">Subscribe Now</button>
+            </div>
+            <div className="space-y-8">
+              <h4 className="text-xl uppercase"> Contact </h4>
+              <div className="space-y-1">
+              <p> Academy road ,Feni sadar ,Feni ,Chattogram ,Bangladesh</p>
+              <div className="flex justify-center items-center gap-5">
+                <img className="w-8 h-8" src={facebook} alt="Fecebook"/>
+                <img className="w-8 h-8" src={linked} alt="Linkedin"/>
+                <img className="w-8 h-8"  src={twiter} alt="Twiter"/>
+                <img className="w-8 h-8"  src={insta} alt="Instagram"/>
+
+              </div>
+              </div>
+            </div>
+
+           
+           
+          </footer>
+        
       </div>
     </>
   )
