@@ -10,6 +10,10 @@ import facebook from "../src/assets/facebook.png"
 import linked from "../src/assets/linked.png"
 import twiter from "../src/assets/twiter.png"
 import insta from "../src/assets/insta.png"
+import gmail from "../src/assets/gmail.png"
+import mobile from "../src/assets/mobile.png"
+import location from "../src/assets/location.png"
+
 
 import banner from "../src/assets/banner.jpg"
 import hostelImage from '../src/assets/hostel.jpg'
@@ -150,6 +154,44 @@ function App() {
               </div>
               </div>
           </div>
+        </div>
+        <h1 className="text-center text-5xl font-bold">Contact us</h1>
+        <div className="w-full  grid grid-cols-2">
+
+<div>
+<div className="flex pt-2">
+        <img  className="w-[40px] h-[40px] " src={location} alt='location'/>
+         <div className="text-left">
+         <h3 className="text-2xl  p-1">
+              Address
+          </h3>
+          <p  className="text-[20px]"> Academy road, Feni sadar, Feni,chitagong,Bangladesh</p>
+         </div>
+        </div>
+        <div className="flex pt-3" >
+        <img className="w-[40px] h-[40px] " src={gmail} alt='gmail'/>
+          <h3 className="text-2xl p-2">
+             Gmail
+          </h3>
+        </div>
+        <div className="flex">
+        <img  className="w-[40px] h-[40px] " src={mobile} alt='mobile'/>
+          <h3 className="text-2xl  p-1">
+              Mobile
+          </h3>
+        </div>
+</div>
+<div className="w-[250px] h-[350px] bg-amber-400 mt-6">
+  <h1  className="text-2xl font-bold">send your message</h1>
+<div className="mt-8 p-4  ">
+<input  className=" p-3 border-b" type="text" placeholder="Full name"/>
+<input className=" p-3 border-b" type="text" placeholder="Email"/>
+<input className=" p-3 border-b" type="text" placeholder="Text your message....."/>
+<button className="text-xl w-[60px] h-[50px] font-bold p-2 rounded-md  bg-green-400 mt-5"> Send</button>
+</div>
+</div>
+
+        
         </div>
         
           <footer className=" mt-10 p-10 grid grid-cols-3 text-center gap-5 bg-gray-400 text-white">
