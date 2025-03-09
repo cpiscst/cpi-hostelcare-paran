@@ -10,15 +10,16 @@ import facebook from "../src/assets/facebook.png"
 import linked from "../src/assets/linked.png"
 import twiter from "../src/assets/twiter.png"
 import insta from "../src/assets/insta.png"
-import gmail from "../src/assets/gmail.png"
-import mobile from "../src/assets/mobile.png"
-import location from "../src/assets/location.png"
+import icon from "../src/assets/icon.jpg"
+
 
 
 import banner from "../src/assets/banner.jpg"
 import hostelImage from '../src/assets/hostel.jpg'
 import logo from '../src/assets/logo.jpg.png'
-import person1 from '../src/assets/person1.jpg'
+import person 1 from '../src/assets/person 1.jpg'
+import person 2 from '../src/assets/person 2.jpg'
+import person 3 from '../src/assets/person 3.jpg'
 function App() {
 
   return (
@@ -126,17 +127,18 @@ function App() {
 
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={person1} alt='Member Image'></img>
+                <img src={person 1} alt='person 1'/>
                 </figure>
                 <div className='p-6 text-center'>
-                <h6 className='text-3xl font-semibold '>Chomchom Ali</h6>
-                <p>Hostel Super</p>
+                <h6 className='text-3xl font-semibold '>Asaduzzaman Asad</h6>
+                <p>House Director</p>
+                
               </div>
               </div>
               
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={person1} alt='Member Image'></img>
+                <img src={person 2} alt='person 2'/>
                 </figure>
                 <div className='p-6 text-center'>
                 <h6 className='text-3xl font-semibold '>Kashem Ali</h6>
@@ -146,7 +148,7 @@ function App() {
 
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={person1} alt='Member Image'></img>
+                <img src={persom 3} alt='person 3'/>
                 </figure>
                 <div className='p-6 text-center'>
                 <h6 className='text-3xl font-semibold '>Abdul Ali</h6>
@@ -155,42 +157,26 @@ function App() {
               </div>
           </div>
         </div>
-        <h1 className="text-center text-5xl font-bold">Contact us</h1>
-        <div className="w-full  grid grid-cols-2">
+        
+        <div className="w-full mt-4 ">
+        <h1 className="text-center text-5xl font-bold py-10 ">Contact us</h1>
+  <div className="grid grid-cols-2">
+  <div>
+  
+  <img  className="w-[300px] h-[450px]" src={icon} alt="icon"/>
+  </div>
+  <diV>
+    
+    <h1  className="text-2xl font-bold p-2">Send your message</h1>
+<div className="mt-8 p-3">
+<input  className=" p-3 block border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Full name"/>
+<input className=" p-3 block  border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Email"/>
+<input className=" p-3  block border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Text your message....."/>
+<button className="text-xl px-15 bg-red-600 text-white font-bold p-2 rounded-md  mt-5"> Send</button>
+</div>
+  </diV>
 
-<div>
-<div className="flex pt-2">
-        <img  className="w-[40px] h-[40px] " src={location} alt='location'/>
-         <div className="text-left">
-         <h3 className="text-2xl  p-1">
-              Address
-          </h3>
-          <p  className="text-[20px]"> Academy road, Feni sadar, Feni,chitagong,Bangladesh</p>
-         </div>
-        </div>
-        <div className="flex pt-3" >
-        <img className="w-[40px] h-[40px] " src={gmail} alt='gmail'/>
-          <h3 className="text-2xl p-2">
-             Gmail
-          </h3>
-        </div>
-        <div className="flex">
-        <img  className="w-[40px] h-[40px] " src={mobile} alt='mobile'/>
-          <h3 className="text-2xl  p-1">
-              Mobile
-          </h3>
-        </div>
-</div>
-<div className="w-[250px] h-[350px] bg-amber-400 mt-6">
-  <h1  className="text-2xl font-bold">send your message</h1>
-<div className="mt-8 p-4  ">
-<input  className=" p-3 border-b" type="text" placeholder="Full name"/>
-<input className=" p-3 border-b" type="text" placeholder="Email"/>
-<input className=" p-3 border-b" type="text" placeholder="Text your message....."/>
-<button className="text-xl w-[60px] h-[50px] font-bold p-2 rounded-md  bg-green-400 mt-5"> Send</button>
-</div>
-</div>
-
+  </div>
         
         </div>
         
