@@ -28,7 +28,7 @@ function App() {
     
       <div className='max-w-[1200px] my-0 mx-auto' >
         {/* Navbar Section */}
-        <nav className='flex justify-between items-center bg-orange-100 
+        <nav className='flex justify-between items-center bg-violet-300
         h-[60px] '>
 
           <div>
@@ -81,37 +81,37 @@ function App() {
           <h2 className='text-5xl text-center py-10 font-bold'>Our Service</h2>
 
          <div className='grid grid-cols-3 gap-5 '>
-         <div className=' h-[100px] w-full bg-gray-300  rounded border-2 border-gray-400 flex items-center justify-center'>
+         <div className=' h-[100px] w-full bg-gray-300  rounded-2xl border-2 border-gray-400 flex items-center justify-center'>
               <img  className="w-[50px] h-[50px]" src={room} alt="room" />
-              <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Room</h6>
+              <h6 className='uppercase text-3xl font-semibold text-center p-3 text-gray-800'>Room</h6>
           </div>
 
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded-2xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
             <img className="w-[50px] h-[50px]" src={meal} alt="meal"/>
-              <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Meal</h6>
+              <h6 className='uppercase text-3xl font-semibold p-2 text-center text-gray-800'>Meal</h6>
           </div>
 
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded-2xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
           <img  className="w-[50px] h-[50px]" src={event} alt="event"/>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Event</h6>
           </div>
 
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded-2xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
           <img className="w-[70px] h-[70px]" src={security} alt="security"/>
               <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Security</h6>
           </div>
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded-2xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
           <img className="w-[50px] h-[50px] icon=left" src={wifi} alt="wifi"/>
-              <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>WiFi</h6>
+              <h6 className='uppercase text-3xl font-semibold text-center p-3 text-gray-800'>WiFi</h6>
           </div>
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full rounded-2xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
           <img className="w-[180px] h-[100px]" src={cleaning} alt="cleaning"/>
-              <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Cleaning</h6>
+              <h6 className='uppercase text-3xl font-semibold text-center  text-gray-800'>Cleaning</h6>
           </div>
-          <div className=' h-[100px] w-full rounded border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
+          <div className=' h-[100px] w-full  rounded-xl border-2 border-gray-400 flex items-center justify-center bg-gray-300'>
           <img className="w-[50px] h-[50px]" src={home_tutor} alt="home_tutor"/>
           
-              <h6 className='uppercase text-3xl font-semibold text-center text-gray-800'>Home Tutor</h6>
+              <h6 className='uppercase text-3xl font-semibold text-center p-3 text-gray-800'>Home Tutor</h6>
           </div>
          </div>
         </div>
@@ -126,9 +126,9 @@ function App() {
           <h2 className='text-5xl font-bold text-center my-8'>Our Member</h2>
           <div className='grid grid-cols-3 gap-5'> 
 
-              <div className='h-[350px] border-2 rounded-xl'>
+              <div className='h-[350px] bg-gray-300 border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                  <img  className=" w-[250px] h-[250px] " src={person1} alt="person1"/>
+                  <img  className=" w-[450px] h-[250px] " src={person1} alt="person1"/>
                
                 </figure>
                 <div className='p-6 text-center'>
@@ -138,7 +138,7 @@ function App() {
               </div>
               </div>
               
-              <div className='h-[350px] border-2 rounded-xl'>
+              <div className='h-[350px]  bg-gray-300 border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
                 <img  className=" w-[250px] h-[250px] "src={person2} alt="person2"/>
                 </figure>
@@ -148,7 +148,7 @@ function App() {
               </div>
               </div>
 
-              <div className='h-[350px] border-2 rounded-xl'>
+              <div className='h-[350px]  bg-gray-300  border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
                 <img  className=" w-[250px] h-[250px] "src={person3} alt="person3"/>
                 </figure>
@@ -160,12 +160,12 @@ function App() {
           </div>
         </div>
         
-        <div className="w-full mt-4 ">
+        <div className="w-full mt-4 bg-stone-200 ">
         <h1 className="text-center text-5xl font-bold py-10 ">Contact us</h1>
-  <div className="grid grid-cols-2">
+  <div className="grid grid-cols-2 ">
   <div>
   
-  <img  className="w-[300px] h-[450px]" src={icon} alt="icon"/>
+  <img  className="w-[400px] h-[450px]" src={icon} alt="icon"/>
   </div>
   <diV>
     
@@ -174,7 +174,7 @@ function App() {
 <input  className=" p-3 block border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Full name"/>
 <input className=" p-3 block  border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Email"/>
 <input className=" p-3  block border-b-3 my-2 bg-gray-300 rounded-2xl" type="text" placeholder="Text your message....."/>
-<button className="text-xl px-15 bg-red-600 text-white font-bold p-2 rounded-md  mt-5"> Send</button>
+<button className="text-xl px-15 bg-blue-400 text-white font-bold p-2 rounded-md  mt-5"> Send</button>
 </div>
   </diV>
 
