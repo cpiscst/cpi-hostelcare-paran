@@ -11,15 +11,16 @@ import linked from "../src/assets/linked.png"
 import twiter from "../src/assets/twiter.png"
 import insta from "../src/assets/insta.png"
 import icon from "../src/assets/icon.jpg"
+import person1 from "../src/assets/person1.jpg"
+import person2 from "../src/assets/person2.jpg"
+import person3 from "../src/assets/person3.jpg"
 
 
 
 import banner from "../src/assets/banner.jpg"
 import hostelImage from '../src/assets/hostel.jpg'
 import logo from '../src/assets/logo.jpg.png'
-import person 1 from '../src/assets/person 1.jpg'
-import person 2 from '../src/assets/person 2.jpg'
-import person 3 from '../src/assets/person 3.jpg'
+
 function App() {
 
   return (
@@ -127,10 +128,11 @@ function App() {
 
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={person 1} alt='person 1'/>
+                  <img  className=" w-[250px] h-[250px] " src={person1} alt="person1"/>
+               
                 </figure>
                 <div className='p-6 text-center'>
-                <h6 className='text-3xl font-semibold '>Asaduzzaman Asad</h6>
+                <h6 className='text-3xl font-semibold '> Asaduzzaman  asad </h6>
                 <p>House Director</p>
                 
               </div>
@@ -138,7 +140,7 @@ function App() {
               
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={person 2} alt='person 2'/>
+                <img  className=" w-[250px] h-[250px] "src={person2} alt="person2"/>
                 </figure>
                 <div className='p-6 text-center'>
                 <h6 className='text-3xl font-semibold '>Kashem Ali</h6>
@@ -148,11 +150,11 @@ function App() {
 
               <div className='h-[350px] border-2 rounded-xl'>
                 <figure className='flex justify-center pt-1'>
-                <img src={persom 3} alt='person 3'/>
+                <img  className=" w-[250px] h-[250px] "src={person3} alt="person3"/>
                 </figure>
                 <div className='p-6 text-center'>
                 <h6 className='text-3xl font-semibold '>Abdul Ali</h6>
-                <p>Hostel Super</p>
+                <p>Hostel manager</p>
               </div>
               </div>
           </div>
