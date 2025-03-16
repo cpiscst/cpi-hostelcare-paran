@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import logo from "../assets/logo.png";
 
 const Navbar = () => {
@@ -16,23 +17,23 @@ const Navbar = () => {
 
         <div>
           <ul className="flex space-x-3 items-center text-gray-800 text-xl">
-            <li className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
+            <NavLink to={"/"} className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
               Home
-            </li>
-            <li className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
+            </NavLink>
+            <NavLink to={"/about"} className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
               About
-            </li>
-            <li className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
+            </NavLink>
+            <NavLink to={"/contact"} className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
               Contact
-            </li>
-            <li className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
-              Blog
-            </li>
+            </NavLink>
+            <NavLink to={"/dashboard"} className="cursor-pointer hover:text-white hover:bg-gray-400 py-4 px-2">
+              Dashboard
+            </NavLink>
             <button className="p-2 h-[50px] cursor-pointer bg-[#ECE8DC] text-black rounded">
-              SignIn
+              <NavLink to={"/signIn"}>SignIn</NavLink> 
             </button>
             <button className="p-2 h-[50px] bg-[#FFCD68] cursor-pointer text-black rounded">
-              SignUp
+             <NavLink to={"signUp"}> SignUp</NavLink> 
             </button>
           </ul>
         </div>
