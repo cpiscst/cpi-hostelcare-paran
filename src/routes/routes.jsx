@@ -1,4 +1,6 @@
-import { Route, Routes } from "react-router";
+import { createBrowserRouter } from "react-router";
+import Home from "../page/Home";
+import MainLayout from "../layout/MainLayout";
 import About from "../page/About";
 import Contact from "../page/Contact";
 import SignIn from "../page/SignIn";
@@ -6,11 +8,33 @@ import Signup from "../page/Signup";
 
 
 
+const routes=createBrowserRouter([
+    {
+        path:"/",
+        element:<MainLayout/>,
+        children:[
+            {
+                path: "/",
+                element: <Home/>,
+              },
+              {
+                path: "/about",
+                element: <About/>,
+              },
+              {
+                path: "/contact",
+                element: <Contact/>,
+              },
+              {
+                path: "/signIn",
+                element: <SignIn/>,
+              },
+              {
+                path: "/signUp",
+                element: <Signup/>,
+              },
+        ]
+    }
+])
 
-<Routes>
-<Route path="/" element={<Home />} />
-<Route path="/about" element={<About/>}/>
-<Route path="/contact" element={<Contact/>}/>
-<Route path="/signIn" element={<SignIn/>}/>
-<Route path="/signUp" element={<Signup/>}/>
-</Routes>
+export default routes
