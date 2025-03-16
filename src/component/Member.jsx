@@ -32,7 +32,7 @@ const Member = () => {
         <div className='flex justify-between gap-5'> 
 
             {
-              memberData.map((item) => <div key={item.name} className='h-[350px] w-[300px]  bg-gray-300 border-2 rounded-xl'>
+              memberData.map((item) => <div key={item.name} className='h-[350px] w-[300px]  bg-stone-100 border-2 rounded-xl'>
               <figure className='flex justify-center pt-1'>
                 <img  className=" h-[190px]  " src={person1} alt="person1"/>
              
@@ -45,6 +45,7 @@ const Member = () => {
             </div>
             </div>)
             }
+            
             
            
 
