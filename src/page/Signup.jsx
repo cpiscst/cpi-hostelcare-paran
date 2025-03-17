@@ -1,18 +1,19 @@
+
+
 const Signup = () => {
   return (
     <div>
       
       <div className="flex justify-between p-4">
-        <div className="">
-         <img src=""></img>
+        <div>
+       
         </div>
         <div className="grid grid-cols-2 space-y-2">
             <div>
               <input
                 className="border-2 rounded-md h-[40px] w-[200px] font-bold"
                 type="text"
-                placeholder="First Name"
-              />
+                placeholder="First Name" />
             </div>
             <div>
               <input
@@ -81,11 +82,11 @@ const Signup = () => {
               <input
                 className="border-2 rounded-md h-[40px] w-[200px] font-bold"
                 type="text"
-                placeholder=" G.Mobile Number"
+                placeholder=" Guardian Mobile Number"
               />
             </div>
           
-          <button>Submit</button>
+          <button className=" text-center bg-stone-200 w-[100px] h-[30px] rounded-xl font-bold">Submit</button>
           
           
           </div>
