@@ -5,6 +5,7 @@ import About from "../page/About";
 import Contact from "../page/Contact";
 import SignIn from "../page/SignIn";
 import Signup from "../page/Signup";
+import Dashboard from "../page/Dashboard";
 
 
 
@@ -32,6 +33,10 @@ const routes=createBrowserRouter([
               {
                 path: "/signUp",
                 element: <Signup/>,
+              },
+              {
+                path: "/dashboard",
+                element: <Dashboard/>,
               },
         ]
     }
